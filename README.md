@@ -51,7 +51,7 @@ Beyond looking at the network traffic, we can investigate the initial access vec
 
 <img width="746" height="405" alt="image" src="https://github.com/user-attachments/assets/58cf2dba-405e-45c7-b000-9c8892afa399" />
 
-As shown in the headers, the email arrived with the subject line PURCHASE QUOTATION. The attacker is using impersonation techniques here. The From: header shows that the message pretends to come from a real company employee (sertan@acronas.com.tr). This is a classic social engineering trick designed to create urgency and make the business target open the malicious attachment.
+As shown in the headers, the email arrived with the subject line PURCHASE QUOTATION. The attacker is using impersonation techniques here. The From: header shows that the message pretends to come from a real company employee (`sertan@acronas.com.tr`). This is a classic social engineering trick designed to create urgency and make the business target open the malicious attachment.
 <img width="736" height="425" alt="image" src="https://github.com/user-attachments/assets/c93c3a58-1807-4e99-a993-0283a7e720cf" />
 
 
