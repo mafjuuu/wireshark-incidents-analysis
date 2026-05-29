@@ -26,7 +26,7 @@ Because the website does not use HTTPS, it does not encrypt anything. To reveal 
 <img width="268" height="372" alt="image" src="https://github.com/user-attachments/assets/dd3ef74e-8ce0-4e60-80df-c87857d4d367" />
 
 ## AgentTesla Malware Analysis (Infostealer)
-After showing the basic risks of HTTP, we will now analyze a real-world infection. In this case, an employee fell victim to a phishing attack and executed a malicious file, which turned out to be the AgentTesla malware. To perform this analysis, I used real traffic data and infection artifacts from Malware-Traffic-Analysis.net (image_c8ebbc.png). AgentTesla is a dangerous infostealer designed to silently extract sensitive data, such as browser passwords, email credentials, and keystrokes, from the infected machine.
+After showing the basic risks of HTTP, we will now analyze a real-world infection. In this case, an employee fell victim to a phishing attack and executed a malicious file, which turned out to be the AgentTesla malware. To perform this analysis, I used real traffic data and infection artifacts from Malware-Traffic-Analysis.net. AgentTesla is a dangerous infostealer designed to silently extract sensitive data, such as browser passwords, email credentials, and keystrokes, from the infected machine.
 <img width="735" height="251" alt="image" src="https://github.com/user-attachments/assets/e71d11d6-0b86-456e-add1-16b51d279a18" />
 
 Now I will investigate the network traffic to find out exactly how the malware communicated with the attacker's server and what data was stolen.
