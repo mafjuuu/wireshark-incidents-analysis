@@ -21,7 +21,7 @@ Before we look at the real malware incidents, I want to show how easy it is to s
 After capturing the network traffic, I needed to find the exact moment the login data was sent to the server. I filtered the huge mass of packets in Wireshark using the http filter and looked specifically for the HTTP POST method, which is used to submit form data.
 <img width="898" height="340" alt="image" src="https://github.com/user-attachments/assets/4df42ca2-c249-4cbe-ae31-60397f1e3f9d" />
 
-Because the website does not use HTTPS, it does not encrypt anything. By expanding the packet details of that POST request, I easily found my own test credentials written in plaintext inside the data fields, requiring absolutely no decryption.
+Because the website does not use HTTPS, it does not encrypt anything. To reveal these credentials, I expanded the HTML Form URL Encoded section within Wireshark's Packet Details pane, which parses the raw body of the HTTP POST request. As a result, the parameters uid=robert123 and passw=robert123 became fully visible in plaintext, demonstrating how effortlessly an attacker can intercept sensitive login data over an unencrypted connection.
 
 <img width="268" height="372" alt="image" src="https://github.com/user-attachments/assets/dd3ef74e-8ce0-4e60-80df-c87857d4d367" />
 
